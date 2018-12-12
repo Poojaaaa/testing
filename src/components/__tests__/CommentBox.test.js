@@ -22,4 +22,5 @@ it("has a text area that user can type in", () => {
     target: { value: "new comment" }
   });
   wrapped.update();
+  expect(wrapped.find("textarea").prop("value")).toEqual("new comment");
 });
